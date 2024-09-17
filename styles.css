@@ -21,3 +21,17 @@ img {
 .sect3div img:hover {
   scale: 1.2;
 }
+.card{
+  font-size: 0.8em;
+}
+.card_img{
+  overflow: hidden;
+  height: 40%;
+}
+.card_img img{
+  height: 100%;
+  transition: 0.5s;
+}
+.card_img img:hover {
+  scale: 1.2;
+}
