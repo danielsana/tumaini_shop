@@ -11,6 +11,8 @@ img {
 }
 .sect3div {
   height: 30%;
+  overflow: hidden;
+  transition: 0.3s;
 }
 .sect3div img {
   overflow: hidden;
