@@ -12,3 +12,10 @@ img {
 .sect3div {
   height: 30%;
 }
+.sect3div img {
+  overflow: hidden;
+  transition: 0.5s;
+}
+.sect3div img:hover {
+  scale: 1.2;
+}
