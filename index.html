@@ -26,12 +26,12 @@
     />
   </head>
   <body>
-    <div class="container-fluid">
-      <section class="row">
-        <div class="col-md-12">
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <section class="row nav-sec">
+        <div class="col-md-12 nav-div">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary mt-4">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Tumaini Collections</a>
+              <a class="navbar-brand" href="index.html">TuC_Store</a>
               <button
                 class="navbar-toggler"
                 type="button"
@@ -44,17 +44,17 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
+                <ul class="navbar-nav ms-auto">
+                  <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"
                       >Home</a
                     >
+                  </li> -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="account.html"><span><i class="bi bi-person"></i></span> Account</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#"><span><i class="bi bi-person"></i></span> Account</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><span><i class="bi bi-cart3"></i></span> cart</a>
+                    <a class="nav-link" href="cart.html"><span><i class="bi bi-cart3"></i></span> cart</a>
                   </li>
                 </ul>
               </div>
@@ -90,13 +90,16 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active myimg">
-                <img src="images/slide1.gif" class="d-block w-100" alt="..." />
+                <img src="images/slide1.jpg" class="d-block w-100" alt="..." />
               </div>
               <div class="carousel-item myimg">
-                <img src="images/slide2.gif" class="d-block w-100" alt="..." />
+                <img src="images/slide2.jpg" class="d-block w-100" alt="..." />
               </div>
               <div class="carousel-item myimg">
                 <img src="images/slide3.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item myimg">
+                <img src="images/slide4.jpg" class="d-block w-100" alt="..." />
               </div>
             </div>
             <button
@@ -421,10 +424,10 @@
       </section>
 
       <!-- footer -->
-      <section class="row my-4 bg-dark p-2 text-light">
-        <div class="col-md-2">
+      <section class="row mt-4 bg-dark p-2 text-light footer">
+        <div class="col-md-2 f_logo">
           <h4 class="text-light">
-            TUMAINI<span class="p-1"
+            TuC_Store<span class="p-1"
               ><i class="bi bi-star bg-warning" style="font-size: 1.2rem"></i
             ></span>
           </h4>
@@ -450,6 +453,7 @@
           </p>
           <a href="#" class="text-warning">I accept the Legal Terms</a>
         </div>
+
         <div class="col-md-4">
           <h6>DOWNLOAD TUMAINI FREE APP</h6>
           <p>Get access to exclusive offers!</p>

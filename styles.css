@@ -1,8 +1,29 @@
+body {
+  /* margin: 0px 40px; */
+  background-color: aquamarine;
+}
+.container {
+  background-color: rgb(187, 185, 185);
+}
+.nav-sec {
+  position: relative;
+  background-color: aqua;
+  top: -20px;
+  left: -10px;
+  margin-bottom: 100px;
+  width: 100%;
+}
+.nav-div {
+  position: fixed;
+  width: 60%;
+  z-index: 7;
+}
 .myslider {
   /* height: 40vh; */
 }
 .myimg {
-  height: 50vh;
+  /* height: 50vh; */
+  margin-bottom: 40px;
 }
 img {
   width: 100%;
@@ -19,7 +40,7 @@ img {
   transition: 0.5s;
 }
 .sect3div img:hover {
-  scale: 1.2;
+  scale: 0.8;
 }
 .card {
   font-size: 0.8em;
@@ -49,5 +70,15 @@ img {
   padding: 5px;
 }
 .card-title {
+  font-size: 0.8rem;
+}
+.footer {
+  display: flex;
+  width: 100%;
+}
+.f_logo {
+  display: flex;
+  align-items: center;
+  text-align: center;
   font-size: 0.8rem;
 }

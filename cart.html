@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- navbar  -->
+      <section class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">TuC_Store</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"
+                      >Home</a
+                    >
+                  </li> -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="account.html"><span><i class="bi bi-person"></i></span> Account</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cart.html"><span><i class="bi bi-cart3"></i></span> cart</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+
+      <!-- content  -->
+
+      <section class="row m-4 p-2 justify-content-center align-items-center">
+        <div class="p-4 text-center col-md-12 shadow justify-content-center align-items-center">
+            <div style="width: 100px; height: 100px; margin: 10px auto;">
+                <img src="images/cart.svg" alt="" width="100%">
+            </div>
+            <p>Your cart is empty!</p>
+            <p>Browse our categories and discover our best deals!</p>
+            <br>
+            <a href="index.html" class="btn btn-warning text-light">Start Shopping</a>
+        </div>
+
+        <h1 class="display-3 text-warning text-center m-4">Reviewed Items</h1>
+      </section>
+
+      <section class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card_img">
+                  <img
+                    src="images/bed1.jpg"
+                    class="card-img-top"
+                    alt="..."
+                    width="100%"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">TC DUVET</h5>
+                  <p class="card-text">
+                    1 Pc High Quality , + shipping from KSh 149 to CBD -
+                    UON/Globe/Koja/River Road
+                  </p>
+                  <b class="text-warning">KSh 4,000</b>
+                  <br />
+                  <a href="#" class="btn btn-danger">-14%</a>
+                </div>
+              </div>
+        </div>
+      </section>
+
+      <!-- footer  -->
+      <section class="row my-4 bg-dark p-2 text-light">
+        <div class="col-md-2">
+          <h4 class="text-light">
+            TUMAINI<span class="p-1"
+              ><i class="bi bi-star bg-warning" style="font-size: 1.2rem"></i
+            ></span>
+          </h4>
+        </div>
+        <div class="col-md-6">
+          <h6 class="text-uppercase text-light">new to tumaini ?</h6>
+          <p class="lead">
+            Subscribe to our newsletter to get updates on our latest offers!
+          </p>
+          <div style="display: flex">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="enter email address"
+              style="width: 40%"
+            />
+            <a href="#" class="btn btn-outline-warning mx-3">male</a>
+            <a href="#" class="btn btn-outline-warning">female</a>
+          </div>
+          <p>
+            <span><input type="checkbox" /></span> I agree to Tumaini’s Privacy
+            and Cookie Policy. You can unsubscribe from newsletters at any time.
+          </p>
+          <a href="#" class="text-warning">I accept the Legal Terms</a>
+        </div>
+        
+        <div class="col-md-4">
+          <h6>DOWNLOAD TUMAINI FREE APP</h6>
+          <p>Get access to exclusive offers!</p>
+          <a
+            href="#"
+            style="color: white; font-size: 0.8rem; text-decoration: none"
+            ><span><i class="bi bi-apple"></i></span>DOWNLOAD ON AppleStore</a
+          >
+          <BR></BR>
+          <a
+            href="#"
+            style="color: white; font-size: 0.8rem; text-decoration: none"
+            ><span><i class="bi bi-google-play"></i></span>GETIT ON PlayStore</a
+          >
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
