@@ -24,44 +24,105 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <style>
+      .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff9900;
+    }
+    .search-bar {
+      width: 50%;
+    }
+    .navbar-nav .nav-link {
+      color: #333;
+      font-weight: 500;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #ff9900;
+    }
+    .navbar-toggler {
+      border-color: #ff9900;
+    }
+    .cart-icon {
+      font-size: 20px;
+      position: relative;
+    }
+    .cart-icon .badge {
+      position: absolute;
+      top: -5px;
+      right: -10px;
+      background-color: red;
+    }
+      .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 40px 0;
+    }
+    .footer a {
+      color: #ff9900;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    .footer h5 {
+      color: #ff9900;
+      font-weight: bold;
+    }
+    .footer .social-icons a {
+      font-size: 24px;
+      margin-right: 15px;
+      color: #ff9900;
+    }
+    .newsletter-input {
+      width: 100%;
+      max-width: 300px;
+    }
+    </style>
   </head>
   <body>
     <div class="container">
-      <section class="row nav-sec">
-        <div class="col-md-12 nav-div">
-          <nav class="navbar navbar-expand-lg bg-body-tertiary mt-4">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">TuC_Store</a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                  <!-- <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html"
-                      >Home</a
-                    >
-                  </li> -->
-                  <li class="nav-item">
-                    <a class="nav-link" href="account.html"><span><i class="bi bi-person"></i></span> Account</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="cart.html"><span><i class="bi bi-cart3"></i></span> cart</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </section>
+      
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">TUC_Store</a>
+    
+    <!-- Toggler/collapsing button for mobile view -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links & Search -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- Centered Search Bar -->
+      <form class="d-flex mx-auto search-bar">
+        <input class="form-control" type="search" placeholder="Search for products, brands, and more" aria-label="Search">
+        <button class="btn btn-warning ms-1" type="submit">Search</button>
+      </form>
+
+      <!-- Right-aligned Links -->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Help Center</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><span></span> Account</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Orders</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="bi bi-cart cart-icon"></i>
+            <span class="badge bg-danger">3</span> <!-- Example cart item count -->
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar End -->
 
       <section class="row myslider mt-5">
         <div class="col-md-12">
@@ -424,52 +485,73 @@
       </section>
 
       <!-- footer -->
-      <section class="row mt-4 bg-dark p-2 text-light footer">
-        <div class="col-md-2 f_logo">
-          <h4 class="text-light">
-            TuC_Store<span class="p-1"
-              ><i class="bi bi-star bg-warning" style="font-size: 1.2rem"></i
-            ></span>
-          </h4>
-        </div>
-        <div class="col-md-6">
-          <h6 class="text-uppercase text-light">new to tumaini ?</h6>
-          <p class="lead">
-            Subscribe to our newsletter to get updates on our latest offers!
-          </p>
-          <div style="display: flex">
-            <input
-              type="email"
-              class="form-control"
-              placeholder="enter email address"
-              style="width: 40%"
-            />
-            <a href="#" class="btn btn-outline-warning mx-3">male</a>
-            <a href="#" class="btn btn-outline-warning">female</a>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <!-- Categories Section -->
+            <div class="col-md-3">
+              <h5>Categories</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Home & Living</a></li>
+                <li><a href="#">Health & Beauty</a></li>
+                <li><a href="#">Sports & Outdoors</a></li>
+              </ul>
+            </div>
+            
+            <!-- Customer Service Section -->
+            <div class="col-md-3">
+              <h5>Customer Service</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Shipping Info</a></li>
+                <li><a href="#">Track Orders</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </div>
+            
+            <!-- About TUC_Store Section -->
+            <div class="col-md-3">
+              <h5>About TUC_Store</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Affiliate Program</a></li>
+              </ul>
+            </div>
+            
+            <!-- Newsletter & Social Media -->
+            <div class="col-md-3">
+              <h5>Stay Connected</h5>
+              <form class="mb-3">
+                <input type="email" class="form-control newsletter-input" placeholder="Subscribe to Newsletter">
+                <button type="submit" class="btn btn-warning mt-2">Subscribe</button>
+              </form>
+              <div class="social-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
           </div>
-          <p>
-            <span><input type="checkbox" /></span> I agree to Tumaini’s Privacy
-            and Cookie Policy. You can unsubscribe from newsletters at any time.
-          </p>
-          <a href="#" class="text-warning">I accept the Legal Terms</a>
+          
+          <!-- Footer Bottom -->
+          <div class="row mt-4">
+            <div class="col text-center">
+              <p>&copy; 2024 TUC_Store. All rights reserved.</p>
+            </div>
+          </div>
         </div>
-
-        <div class="col-md-4">
-          <h6>DOWNLOAD TUMAINI FREE APP</h6>
-          <p>Get access to exclusive offers!</p>
-          <a
-            href="#"
-            style="color: white; font-size: 0.8rem; text-decoration: none"
-            ><span><i class="bi bi-apple"></i></span>DOWNLOAD ON AppleStore</a
-          >
-          <BR></BR>
-          <a
-            href="#"
-            style="color: white; font-size: 0.8rem; text-decoration: none"
-            ><span><i class="bi bi-google-play"></i></span>GETIT ON PlayStore</a
-          >
-        </div>
-      </section>
+      </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css"></script>
+
   </body>
 </html>
